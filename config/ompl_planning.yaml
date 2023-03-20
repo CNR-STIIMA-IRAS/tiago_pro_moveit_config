@@ -258,34 +258,6 @@ arm_right_torso:
     - SPARStwo
   projection_evaluator: joints(torso_lift_joint,arm_right_1_joint)
   longest_valid_segment_fraction: 0.005
-arms_both:
-  default_planner_config: SBL
-  planner_configs:
-    - SBL
-    - EST
-    - LBKPIECE
-    - BKPIECE
-    - KPIECE
-    - RRT
-    - RRTConnect
-    - RRTstar
-    - TRRT
-    - PRM
-    - PRMstar
-    - FMT
-    - BFMT
-    - PDST
-    - STRIDE
-    - BiTRRT
-    - LBTRRT
-    - BiEST
-    - ProjEST
-    - LazyPRM
-    - LazyPRMstar
-    - SPARS
-    - SPARStwo
-  projection_evaluator: joints(arm_left_1_joint,arm_left_2_joint)
-  longest_valid_segment_fraction: 0.005
 arms_both_torso:
   default_planner_config: SBL
   planner_configs:
