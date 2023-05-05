@@ -2,10 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: tiago_v2_prototype_description
     relative_path: robots/tiago_v2_prototype.urdf.xacro
-    xacro_args: " arm_x:=0.10529 arm_y:=0.15915 arm_z:=-0.11927 arm_pitch:=0.0 arm_yaw:=-1.2217 arm_roll:=-2.0679"
+    xacro_args: ""
   SRDF:
     relative_path: config/tiago_v2_prototype.srdf
   CONFIG:
     author_name: Narcis Miguel
     author_email: narcis.miguel@pal-robotics.com
-    generated_timestamp: 1674826121
+    generated_timestamp: 1683288475
