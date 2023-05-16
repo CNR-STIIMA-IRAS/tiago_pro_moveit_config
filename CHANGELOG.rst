@@ -2,6 +2,11 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* remove the cyclic dependency
+* Contributors: Sai Kishor Kothakota
+
 0.3.1 (2023-05-16)
 ------------------
 * Merge branch 'play-motion' into 'master'
