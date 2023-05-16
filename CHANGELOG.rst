@@ -2,8 +2,8 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.2 (2023-05-16)
+------------------
 * remove the cyclic dependency
 * Contributors: Sai Kishor Kothakota
 
