@@ -2,8 +2,8 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2023-05-16)
+------------------
 * Merge branch 'play-motion' into 'master'
   Play motion
   See merge request robots/tiago_v2_prototype_moveit_config!1
