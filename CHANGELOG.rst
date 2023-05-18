@@ -2,8 +2,8 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.3 (2023-05-18)
+------------------
 * Add default_velocity_scaling_factor to avoid slow movements
 * Contributors: Sai Kishor Kothakota
 
