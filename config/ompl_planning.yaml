@@ -1,4 +1,11 @@
 planner_configs:
+  AnytimePathShortening:
+    type: geometric::AnytimePathShortening
+    shortcut: true  # Attempt to shortcut all new solution paths
+    hybridize: true  # Compute hybrid solution trajectories
+    max_hybrid_paths: 24  # Number of hybrid paths generated per iteration
+    num_planners: 4  # The number of default planners to use for planning
+    planners: ""  # A comma-separated list of planner types (e.g., "PRM,EST,RRTConnect"Optionally, planner parameters can be passed to change the default:"PRM[max_nearest_neighbors=5],EST[goal_bias=.5],RRT[range=10. goal_bias=.1]"
   SBL:
     type: geometric::SBL
     range: 0.0  # Max motion added to tree. ==> maxDistance_ default: 0.0, if 0.0, set on setup()
@@ -121,8 +128,8 @@ planner_configs:
     dense_delta_fraction: 0.001  # delta fraction for interface detection. default: 0.001
     max_failures: 5000  # maximum consecutive failure limit. default: 5000
 arm_left:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -149,8 +156,8 @@ arm_left:
   projection_evaluator: joints(arm_left_1_joint,arm_left_2_joint)
   longest_valid_segment_fraction: 0.005
 arm_right:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -177,8 +184,8 @@ arm_right:
   projection_evaluator: joints(arm_right_1_joint,arm_right_2_joint)
   longest_valid_segment_fraction: 0.005
 torso:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -203,8 +210,8 @@ torso:
     - SPARS
     - SPARStwo
 arm_left_torso:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -231,8 +238,8 @@ arm_left_torso:
   projection_evaluator: joints(torso_lift_joint,arm_left_1_joint)
   longest_valid_segment_fraction: 0.005
 arm_right_torso:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -259,8 +266,8 @@ arm_right_torso:
   projection_evaluator: joints(torso_lift_joint,arm_right_1_joint)
   longest_valid_segment_fraction: 0.005
 arms_both_torso:
-  default_planner_config: SBL
   planner_configs:
+    - AnytimePathShortening
     - SBL
     - EST
     - LBKPIECE
@@ -286,3 +293,55 @@ arms_both_torso:
     - SPARStwo
   projection_evaluator: joints(torso_lift_joint,arm_left_1_joint)
   longest_valid_segment_fraction: 0.005
+gripper_left:
+  planner_configs:
+    - AnytimePathShortening
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
+gripper_right:
+  planner_configs:
+    - AnytimePathShortening
+    - SBL
+    - EST
+    - LBKPIECE
+    - BKPIECE
+    - KPIECE
+    - RRT
+    - RRTConnect
+    - RRTstar
+    - TRRT
+    - PRM
+    - PRMstar
+    - FMT
+    - BFMT
+    - PDST
+    - STRIDE
+    - BiTRRT
+    - LBTRRT
+    - BiEST
+    - ProjEST
+    - LazyPRM
+    - LazyPRMstar
+    - SPARS
+    - SPARStwo
