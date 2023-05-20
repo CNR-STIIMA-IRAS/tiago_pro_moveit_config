@@ -2,8 +2,8 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.4 (2023-05-20)
+------------------
 * Merge branch 'fix-srdf-head-camera' into 'master'
   update srdf
   See merge request robots/tiago_v2_prototype_moveit_config!2
