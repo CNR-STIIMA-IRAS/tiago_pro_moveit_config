@@ -2,8 +2,8 @@
 Changelog for package tiago_v2_prototype_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.5 (2023-05-24)
+------------------
 * modify the joint limit based on the limits of the board
 * Contributors: Sai Kishor Kothakota
 
