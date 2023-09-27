@@ -1,9 +1,9 @@
 <package>
 
-  <name>tiago_v2_prototype_moveit_config</name>
+  <name>tiago_pro_moveit_config</name>
   <version>0.3.5</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the tiago_v2_prototype with the MoveIt! Motion Planning Framework
+     An automatically generated package with all the configuration and launch files for using the tiago_pro with the MoveIt! Motion Planning Framework
   </description>
   <author email="narcis.miguel@pal-robotics.com">Narcis Miguel</author>
   <maintainer email="narcis.miguel@pal-robotics.com">Narcis Miguel</maintainer>
@@ -31,7 +31,7 @@
   <run_depend>xacro</run_depend>
   <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
   <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
-  <!-- <run_depend>tiago_v2_prototype_description</run_depend> -->
+  <!-- <run_depend>tiago_pro_description</run_depend> -->
 
 
 </package>
