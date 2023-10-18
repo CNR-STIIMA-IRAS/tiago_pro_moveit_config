@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.3)
-project(tiago_v2_prototype_moveit_config)
+project(tiago_pro_moveit_config)
 
 find_package(catkin REQUIRED)
 

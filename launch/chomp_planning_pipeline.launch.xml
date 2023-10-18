@@ -26,5 +26,5 @@
   <param name="capabilities" value="$(arg capabilities)" />
   <param name="disable_capabilities" value="$(arg disable_capabilities)" />
 
-  <rosparam command="load" file="$(find tiago_v2_prototype_moveit_config)/config/chomp_planning.yaml" />
+  <rosparam command="load" file="$(find tiago_pro_moveit_config)/config/chomp_planning.yaml" />
 </launch>
