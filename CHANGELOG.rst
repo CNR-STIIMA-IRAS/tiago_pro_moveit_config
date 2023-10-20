@@ -2,6 +2,14 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'change_name' into 'master'
+  Change tiago_v2_prototype to tiago_pro
+  See merge request robots/tiago_pro_moveit_config!3
+* Change tiago_v2_prototype to tiago_pro
+* Contributors: Jordan Palacios, thomaspeyrucain
+
 0.3.5 (2023-05-24)
 ------------------
 * modify the joint limit based on the limits of the board
