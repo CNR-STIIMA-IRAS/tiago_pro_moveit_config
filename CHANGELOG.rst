@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.6 (2023-10-20)
+------------------
 * Merge branch 'change_name' into 'master'
   Change tiago_v2_prototype to tiago_pro
   See merge request robots/tiago_pro_moveit_config!3
