@@ -2,10 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: tiago_pro_description
     relative_path: robots/tiago_pro.urdf.xacro
-    xacro_args: ""
+    xacro_args: "--inorder    end_effector_left:=pal-pro-gripper     end_effector_right:=pal-pro-gripper     ft_sensor_left:=rokubi     ft_sensor_right:=rokubi"
   SRDF:
-    relative_path: config/tiago_pro.srdf
+    relative_path: config/srdf/tiago_pro.srdf
   CONFIG:
-    author_name: Narcis Miguel
-    author_email: narcis.miguel@pal-robotics.com
-    generated_timestamp: 1683288475
+    author_name: Ilenia Perrella
+    author_email: ilenia.perrella@pal-robotics.com
+    generated_timestamp: 1555084771
