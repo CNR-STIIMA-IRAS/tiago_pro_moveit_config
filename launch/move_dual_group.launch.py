@@ -52,7 +52,7 @@ def declare_launch_arguments() -> Dict:
         'robot_name',
         default_value='tiago_pro',
         description='Name of the robot. ',
-        choices=['pmb2', 'tiago', 'pmb3', 'tiago_dual', 'tiago_pro'])
+        choices=['tiago_pro'])
 
     arg_dict[robot_name.name] = robot_name
 
