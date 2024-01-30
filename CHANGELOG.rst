@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.0 (2024-01-30)
+------------------
 * Merge branch 'ros2-migration' into 'humble-devel'
   ros2 migration
   See merge request robots/tiago_pro_moveit_config!4
