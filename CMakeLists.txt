@@ -1,10 +1,14 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.8)
 project(tiago_pro_moveit_config)
 
-find_package(ament_cmake REQUIRED)
+find_package(ament_cmake_auto REQUIRED)
 
-ament_package()
+ament_auto_find_build_dependencies()
 
-install(DIRECTORY launch DESTINATION share/${PROJECT_NAME}
-  PATTERN "setup_assistant.launch.py" EXCLUDE)
-install(DIRECTORY config DESTINATION share/${PROJECT_NAME})
+# Install the moveit setup assistant to avoid some warnings when launching move_group
+install(FILES
+    .setup_assistant
+    DESTINATION share/${PROJECT_NAME}
+)
+
+ament_auto_package(INSTALL_TO_SHARE launch config)
