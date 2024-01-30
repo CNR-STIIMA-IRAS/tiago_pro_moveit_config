@@ -2,6 +2,18 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'ros2-migration' into 'humble-devel'
+  ros2 migration
+  See merge request robots/tiago_pro_moveit_config!4
+* remove possible choices (only tiago_pro)
+* fix depends
+* fix CMakeLists and package in order to install .setup_assistant
+* migration files
+* migration to ros2 of the CMakeLists and package.xml files
+* Contributors: Adria Roig, ileniaperrella
+
 0.3.6 (2023-10-20)
 ------------------
 * Merge branch 'change_name' into 'master'
