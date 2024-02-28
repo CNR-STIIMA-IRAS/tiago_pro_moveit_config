@@ -150,6 +150,7 @@ def declare_actions(launch_description: LaunchDescription, launch_args: Dict):
         parameters=[
             {'use_sim_time': LaunchConfiguration('use_sim_time')},
             moveit_config.to_dict(),
+            {'publish_robot_description_semantic': True}
         ],
     )
     launch_description.add_action(run_move_group_node)
