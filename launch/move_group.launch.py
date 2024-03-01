@@ -14,7 +14,6 @@
 
 import os
 
-from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
 from launch.substitutions import LaunchConfiguration
@@ -35,9 +34,6 @@ class LaunchArguments(LaunchArgumentsBase):
     end_effector_left: DeclareLaunchArgument = TiagoProArgs.end_effector_left
     ft_sensor_right: DeclareLaunchArgument = TiagoProArgs.ft_sensor_right
     ft_sensor_left: DeclareLaunchArgument = TiagoProArgs.ft_sensor_left
-    camera_model: DeclareLaunchArgument = TiagoProArgs.camera_model
-    base_type: DeclareLaunchArgument = TiagoProArgs.base_type
-    laser_model: DeclareLaunchArgument = TiagoProArgs.laser_model
 
     use_sim_time: DeclareLaunchArgument = DeclareLaunchArgument(
         name='use_sim_time',
@@ -64,23 +60,7 @@ def start_move_group(context, *args, **kwargs):
     end_effector_left = read_launch_argument('end_effector_left', context)
     ft_sensor_right = read_launch_argument('ft_sensor_right', context)
     ft_sensor_left = read_launch_argument('ft_sensor_left', context)
-    camera_model = read_launch_argument('camera_model', context)
-    laser_model = read_launch_argument('laser_model', context)
-    base_type = read_launch_argument('base_type', context)
     use_sensor_manager = read_launch_argument('use_sensor_manager', context)
-
-    robot_description_path = os.path.join(
-        get_package_share_directory('tiago_pro_description'), 'robots', 'tiago_pro.urdf.xacro')
-
-    mappings = {
-        'end_effector_right': end_effector_right,
-        'end_effector_left': end_effector_left,
-        'ft_sensor_right': ft_sensor_right,
-        'ft_sensor_left': ft_sensor_left,
-        'camera_model': camera_model,
-        'laser_model': laser_model,
-        'base_type': base_type,
-    }
 
     hw_suffix = get_hw_suffix(
         arm_right=arm_type_right,
@@ -103,9 +83,9 @@ def start_move_group(context, *args, **kwargs):
         'publish_transforms_updates': True,
     }
 
+    # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
         MoveItConfigsBuilder('tiago_pro')
-        .robot_description(file_path=robot_description_path, mappings=mappings)
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
