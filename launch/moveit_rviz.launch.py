@@ -34,6 +34,7 @@ class LaunchArguments(LaunchArgumentsBase):
     end_effector_left: DeclareLaunchArgument = TiagoProArgs.end_effector_left
     ft_sensor_right: DeclareLaunchArgument = TiagoProArgs.ft_sensor_right
     ft_sensor_left: DeclareLaunchArgument = TiagoProArgs.ft_sensor_left
+    base_type: DeclareLaunchArgument = TiagoProArgs.base_type
 
     use_sim_time: DeclareLaunchArgument = DeclareLaunchArgument(
         name='use_sim_time',
