@@ -10,10 +10,6 @@
 
   <license>Apache License 2.0</license>
 
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit</url>
-
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <exec_depend>moveit_kinematics</exec_depend>
@@ -25,8 +21,10 @@
   <exec_depend>moveit_ros_move_group</exec_depend>
   <exec_depend>tiago_pro_description</exec_depend>  
   
-  <!-- This package is referenced in the warehouse launch files, but does not build out of the box at the moment. Commented the dependency until this works. -->
-  <!-- <exec_depend>warehouse_ros_mongo</exec_depend> -->
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
   <export>
       <build_type>ament_cmake</build_type>
   </export>
