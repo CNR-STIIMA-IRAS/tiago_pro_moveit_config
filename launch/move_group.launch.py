@@ -21,8 +21,9 @@ from launch_pal.arg_utils import read_launch_argument
 from launch_ros.actions import Node
 
 from moveit_configs_utils import MoveItConfigsBuilder
-from launch_pal.arg_utils import LaunchArgumentsBase
+from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
 from launch_pal.robot_arguments import TiagoProArgs
+from tiago_pro_description.tiago_pro_launch_utils import get_tiago_pro_hw_suffix
 from dataclasses import dataclass
 
 
@@ -36,10 +37,7 @@ class LaunchArguments(LaunchArgumentsBase):
     ft_sensor_left: DeclareLaunchArgument = TiagoProArgs.ft_sensor_left
     base_type: DeclareLaunchArgument = TiagoProArgs.base_type
 
-    use_sim_time: DeclareLaunchArgument = DeclareLaunchArgument(
-        name='use_sim_time',
-        default_value='False',
-        description='Use simulation time')
+    use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
     use_sensor_manager_arg: DeclareLaunchArgument = DeclareLaunchArgument(
         name='use_sensor_manager',
         default_value='False',
@@ -63,7 +61,7 @@ def start_move_group(context, *args, **kwargs):
     ft_sensor_left = read_launch_argument('ft_sensor_left', context)
     use_sensor_manager = read_launch_argument('use_sensor_manager', context)
 
-    hw_suffix = get_hw_suffix(
+    hw_suffix = get_tiago_pro_hw_suffix(
         arm_right=arm_type_right,
         arm_left=arm_type_left,
         end_effector_right=end_effector_right,
@@ -71,7 +69,7 @@ def start_move_group(context, *args, **kwargs):
         ft_sensor_right=ft_sensor_right,
         ft_sensor_left=ft_sensor_left)
 
-    robot_description_semantic = (f'config/srdf/tiago_pro{hw_suffix}.srdf')
+    robot_description_semantic = ('config/srdf/tiago_pro_pal-pro-gripper_pal-pro-gripper.srdf')
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
@@ -82,6 +80,7 @@ def start_move_group(context, *args, **kwargs):
         'publish_geometry_updates': True,
         'publish_state_updates': True,
         'publish_transforms_updates': True,
+        # 'publish_robot_description_semantic': True,
     }
 
     # The robot description is read from the topic /robot_description if the parameter is empty
@@ -90,7 +89,8 @@ def start_move_group(context, *args, **kwargs):
         .robot_description_semantic(file_path=robot_description_semantic)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
-        .planning_pipelines(pipelines=['ompl'])
+        .joint_limits(file_path=os.path.join('config', 'joint_limits.yaml'))
+        .planning_pipelines(pipelines=['ompl', 'chomp'], default_planning_pipeline='ompl')
         .planning_scene_monitor(planning_scene_monitor_parameters)
         .pilz_cartesian_limits(file_path=os.path.join('config', 'pilz_cartesian_limits.yaml'))
     )
@@ -111,47 +111,12 @@ def start_move_group(context, *args, **kwargs):
         parameters=[
             {'use_sim_time': LaunchConfiguration('use_sim_time')},
             moveit_config.to_dict(),
+            {'publish_robot_description_semantic': True}
         ],
+
     )
 
     return [run_move_group_node]
-
-
-def get_hw_suffix(
-        arm_right: str = 'no-arm',
-        arm_left: str = 'no-arm',
-        end_effector_right: str = 'no-end-effector',
-        end_effector_left: str = 'no-end-effector',
-        ft_sensor_right: str = 'no-ft-sensor',
-        ft_sensor_left: str = 'no-ft-sensor'):
-
-    if arm_left in ['no-arm']:
-        suffix_left = arm_left
-        return '_' + suffix_left
-
-    components_left = []
-    components_left.append(end_effector_left)
-
-    if ft_sensor_left != 'no-ft-sensor':
-        components_left.append(ft_sensor_left)
-
-    suffix_left = '_' + '_'.join(components_left)
-
-    if arm_right in ['no-arm']:
-        suffix_right = arm_right
-        return '_' + suffix_right
-
-    components_right = []
-    components_right.append(end_effector_right)
-
-    if ft_sensor_right != 'no-ft-sensor':
-        components_right.append(ft_sensor_right)
-
-    suffix_right = '_' + '_'.join(components_right)
-
-    suffix = suffix_left + suffix_right
-
-    return suffix
 
 
 def generate_launch_description():

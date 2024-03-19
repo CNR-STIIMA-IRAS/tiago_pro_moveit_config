@@ -23,6 +23,7 @@ from launch_ros.actions import Node
 from moveit_configs_utils import MoveItConfigsBuilder
 from launch_pal.robot_arguments import TiagoProArgs
 from launch_pal.arg_utils import LaunchArgumentsBase
+from tiago_pro_description.tiago_pro_launch_utils import get_tiago_pro_hw_suffix
 from dataclasses import dataclass
 
 
@@ -36,53 +37,11 @@ class LaunchArguments(LaunchArgumentsBase):
     ft_sensor_left: DeclareLaunchArgument = TiagoProArgs.ft_sensor_left
     base_type: DeclareLaunchArgument = TiagoProArgs.base_type
 
-    use_sim_time: DeclareLaunchArgument = DeclareLaunchArgument(
-        name='use_sim_time',
-        default_value='False',
-        description='Use simulation time')
-
 
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
 
     launch_description.add_action(OpaqueFunction(function=start_rviz))
     return
-
-
-def get_hw_suffix(
-        arm_right: str = 'no-arm',
-        arm_left: str = 'no-arm',
-        end_effector_right: str = 'no-end-effector',
-        end_effector_left: str = 'no-end-effector',
-        ft_sensor_right: str = 'no-ft-sensor',
-        ft_sensor_left: str = 'no-ft-sensor'):
-
-    if arm_left in ['no-arm']:
-        suffix_left = arm_left
-        return '_' + suffix_left
-
-    components_left = []
-    components_left.append(end_effector_left)
-
-    if ft_sensor_left != 'no-ft-sensor':
-        components_left.append(ft_sensor_left)
-
-    suffix_left = '_' + '_'.join(components_left)
-
-    if arm_right in ['no-arm']:
-        suffix_right = arm_right
-        return '_' + suffix_right
-
-    components_right = []
-    components_right.append(end_effector_right)
-
-    if ft_sensor_right != 'no-ft-sensor':
-        components_right.append(ft_sensor_right)
-
-    suffix_right = '_' + '_'.join(components_right)
-
-    suffix = suffix_left + suffix_right
-
-    return suffix
 
 
 def start_rviz(context, *args, **kwargs):
@@ -94,7 +53,7 @@ def start_rviz(context, *args, **kwargs):
     ft_sensor_right = read_launch_argument('ft_sensor_right', context)
     ft_sensor_left = read_launch_argument('ft_sensor_left', context)
 
-    hw_suffix = get_hw_suffix(
+    hw_suffix = get_tiago_pro_hw_suffix(
         arm_right=arm_type_right,
         arm_left=arm_type_left,
         end_effector_right=end_effector_right,
