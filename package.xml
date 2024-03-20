@@ -17,7 +17,7 @@
   <exec_depend>moveit_ros_visualization</exec_depend>
   <exec_depend>moveit_ros_control_interface</exec_depend>
   <exec_depend>moveit_ros_perception</exec_depend>
-
+  <exec_depend>moveit_planners_chomp</exec_depend>
   <exec_depend>launch_pal</exec_depend>
   <exec_depend>moveit_configs_utils</exec_depend>
   <exec_depend>moveit_ros_move_group</exec_depend>
