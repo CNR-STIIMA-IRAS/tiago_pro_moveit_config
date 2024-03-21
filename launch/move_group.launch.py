@@ -38,11 +38,7 @@ class LaunchArguments(LaunchArgumentsBase):
     base_type: DeclareLaunchArgument = TiagoProArgs.base_type
 
     use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
-    use_sensor_manager_arg: DeclareLaunchArgument = DeclareLaunchArgument(
-        name='use_sensor_manager',
-        default_value='False',
-        choices=['True', 'False'],
-        description='Use moveit_sensor_manager for octomap')
+    use_sensor_manager_arg: DeclareLaunchArgument = CommonArgs.use_sensor_manager
 
 
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
