@@ -40,7 +40,7 @@
         <group name="torso"/>
         <group name="arm_right"/>
     </group>
-    <group name="arms_both_torso">
+    <group name="both_arms_torso">
         <group name="torso"/>
         <group name="arm_left"/>
         <group name="arm_right"/>
