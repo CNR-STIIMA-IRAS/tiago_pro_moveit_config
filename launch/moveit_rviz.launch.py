@@ -61,7 +61,7 @@ def start_rviz(context, *args, **kwargs):
         ft_sensor_right=ft_sensor_right,
         ft_sensor_left=ft_sensor_left)
 
-    robot_description_semantic = (f'config/srdf/tiago_pro{hw_suffix}.srdf')
+    robot_description_semantic = ('config/srdf/tiago_pro_pal-pro-gripper_pal-pro-gripper.srdf')
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
