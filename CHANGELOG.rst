@@ -2,6 +2,42 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'dtk/fix/restructure' into 'humble-devel'
+  Dtk/fix/restructure
+  See merge request robots/tiago_pro_moveit_config!12
+* Use commonArgs for sensor_manager
+* Add temporary hardcoded srdf for now
+* add missing chomp depdendency
+* Update move_group to avoid accidental overwriting by moveit-config
+* Rename planning group in srdf
+* Update launch files and config files
+* Update controller config files
+* Add missing perception dependency
+* Merge branch 'fix-move-group' into 'humble-devel'
+  Fix move group
+  See merge request robots/tiago_pro_moveit_config!10
+* Remove website bugtracking and repository tags until public sim is available
+* Add tests packages to package.xml
+* Add Licence and contributing.md
+* Add testing
+* Add srdf for different configurations
+* Enable log colors for move_group and rviz nodes
+* Remove .setup_assistant installation
+* Keep base_type launch argument
+* Read robot_description from the topic
+* UPdate move group to new launch structure
+* Add Moveit rviz launch
+* Update hardware name
+* Remove deprecated file
+* fix move_group
+* Merge branch 'feat/publish_description_semantic' into 'humble-devel'
+  Publish robot_description_semantic
+  See merge request robots/tiago_pro_moveit_config!6
+* Publish robot_description_semantic
+* Contributors: David ter Kuile, Jordan Palacios, Noel Jimenez, davidterkuile, ileniaperrella
+
 1.0.0 (2024-01-30)
 ------------------
 * Merge branch 'ros2-migration' into 'humble-devel'
