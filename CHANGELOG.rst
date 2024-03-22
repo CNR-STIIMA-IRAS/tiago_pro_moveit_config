@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.0.1 (2024-03-22)
+------------------
 * Merge branch 'dtk/fix/restructure' into 'humble-devel'
   Dtk/fix/restructure
   See merge request robots/tiago_pro_moveit_config!12
