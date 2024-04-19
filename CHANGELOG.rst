@@ -2,6 +2,14 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omm/fix/base_laser_collision' into 'humble-devel'
+  SRDF update to account to the collisions of the base with the laser
+  See merge request robots/tiago_pro_moveit_config!13
+* SRDF update to account to the collisions of the base with the laser
+* Contributors: Oscar, davidterkuile
+
 1.0.1 (2024-03-22)
 ------------------
 * Merge branch 'dtk/fix/restructure' into 'humble-devel'
