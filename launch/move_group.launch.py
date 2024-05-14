@@ -13,6 +13,7 @@
 # limitations under the License.
 
 import os
+from pathlib import Path
 
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
@@ -25,6 +26,7 @@ from launch_pal.arg_utils import LaunchArgumentsBase, CommonArgs
 from launch_pal.robot_arguments import TiagoProArgs
 from tiago_pro_description.tiago_pro_launch_utils import get_tiago_pro_hw_suffix
 from dataclasses import dataclass
+from ament_index_python.packages import get_package_share_directory
 
 
 @dataclass(frozen=True)
@@ -65,7 +67,23 @@ def start_move_group(context, *args, **kwargs):
         ft_sensor_right=ft_sensor_right,
         ft_sensor_left=ft_sensor_left)
 
-    robot_description_semantic = ('config/srdf/tiago_pro_pal-pro-gripper_pal-pro-gripper.srdf')
+    srdf_file_path = Path(
+        os.path.join(
+            get_package_share_directory("tiago_pro_moveit_config"),
+            "config", "srdf",
+            "tiago_pro.srdf.xacro",
+        )
+    )
+
+    srdf_input_args = {
+        'arm_type_right': read_launch_argument('arm_type_right', context),
+        'arm_type_left': read_launch_argument('arm_type_left', context),
+        'end_effector_right': read_launch_argument('end_effector_right', context),
+        'end_effector_left': read_launch_argument('end_effector_left', context),
+        'ft_sensor_right': read_launch_argument('ft_sensor_right', context),
+        'ft_sensor_left': read_launch_argument('ft_sensor_left', context),
+        "base_type": read_launch_argument("base_type", context),
+    }
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
@@ -81,7 +99,7 @@ def start_move_group(context, *args, **kwargs):
     # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
         MoveItConfigsBuilder('tiago_pro')
-        .robot_description_semantic(file_path=robot_description_semantic)
+        .robot_description_semantic(file_path=srdf_file_path, mappings=srdf_input_args)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
         .joint_limits(file_path=os.path.join('config', 'joint_limits.yaml'))
