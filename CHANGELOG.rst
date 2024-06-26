@@ -2,6 +2,22 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'dtk/move-robot-args' into 'humble-devel'
+  Change import for launch args
+  See merge request robots/tiago_pro_moveit_config!16
+* Change import for launch args
+* Merge branch 'feat/auto-generated_srdf_files' into 'humble-devel'
+  Feat/auto generated srdf files
+  See merge request robots/tiago_pro_moveit_config!14
+* restructure arguments and indentations
+* create tiago_pro base xacro
+* migrate update script
+* create disable collisions
+* add pal_sea_arm as dependency and create srdf on the go
+* Contributors: Aina Irisarri, David ter Kuile, davidterkuile
+
 1.0.2 (2024-04-19)
 ------------------
 * Merge branch 'omm/fix/base_laser_collision' into 'humble-devel'
