@@ -9,16 +9,8 @@
     <disable_collisions link1="base_antenna_left_link" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_antenna_left_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_antenna_left_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_left_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_antenna_left_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_antenna_left_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_antenna_left_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_antenna_left_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_antenna_left_link" link2="suspension_front_right_link" reason="Never"/>
@@ -40,16 +32,8 @@
     <disable_collisions link1="base_antenna_right_link" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_antenna_right_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_antenna_right_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_antenna_right_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_antenna_right_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_antenna_right_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_antenna_right_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_antenna_right_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_antenna_right_link" link2="suspension_front_right_link" reason="Never"/>
@@ -70,16 +54,8 @@
     <disable_collisions link1="base_dock_link" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_dock_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_dock_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_dock_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_dock_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_dock_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_dock_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_dock_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_dock_link" link2="suspension_front_right_link" reason="Never"/>
@@ -99,16 +75,8 @@
     <disable_collisions link1="base_footprint" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_footprint" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_footprint" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_footprint" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_footprint" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_footprint" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_footprint" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_footprint" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_footprint" link2="suspension_front_right_link" reason="Never"/>
@@ -127,16 +95,8 @@
     <disable_collisions link1="base_front_laser_link" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_front_laser_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_front_laser_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_front_laser_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_front_laser_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_front_laser_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_front_laser_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_front_laser_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_front_laser_link" link2="suspension_front_right_link" reason="Never"/>
@@ -154,16 +114,8 @@
     <disable_collisions link1="base_imu_link" link2="base_rear_laser_link" reason="Never"/>
     <disable_collisions link1="base_imu_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_imu_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_imu_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_imu_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_imu_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_imu_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_imu_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_imu_link" link2="suspension_front_right_link" reason="Never"/>
@@ -180,16 +132,8 @@
     <disable_collisions link1="base_link" link2="base_rear_laser_link" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_link" link2="suspension_front_left_link" reason="Adjacent"/>
     <disable_collisions link1="base_link" link2="suspension_front_right_link" reason="Adjacent"/>
@@ -205,16 +149,8 @@
     <disable_collisions link1="base_link" link2="wheel_rear_right_link" reason="Default"/>
     <disable_collisions link1="base_rear_laser_link" link2="head_1_link" reason="Never"/>
     <disable_collisions link1="base_rear_laser_link" link2="head_2_link" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="base_rear_laser_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="base_rear_laser_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="base_rear_laser_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="base_rear_laser_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="base_rear_laser_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="base_rear_laser_link" link2="suspension_front_right_link" reason="Never"/>
@@ -229,16 +165,8 @@
     <disable_collisions link1="base_rear_laser_link" link2="wheel_rear_left_link" reason="Never"/>
     <disable_collisions link1="base_rear_laser_link" link2="wheel_rear_right_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="head_2_link" reason="Adjacent"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_bottom_screw_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_1_link" link2="head_d435_camera_link" reason="Never"/>
+    <disable_collisions link1="head_1_link" link2="head_front_camera_bottom_screw_frame" reason="Never"/>
+    <disable_collisions link1="head_1_link" link2="head_front_camera_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="head_screen_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="suspension_front_right_link" reason="Never"/>
@@ -252,16 +180,8 @@
     <disable_collisions link1="head_1_link" link2="wheel_front_right_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="wheel_rear_left_link" reason="Never"/>
     <disable_collisions link1="head_1_link" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_bottom_screw_frame" reason="Adjacent"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_2_link" link2="head_d435_camera_link" reason="Adjacent"/>
+    <disable_collisions link1="head_2_link" link2="head_front_camera_bottom_screw_frame" reason="Adjacent"/>
+    <disable_collisions link1="head_2_link" link2="head_front_camera_link" reason="Adjacent"/>
     <disable_collisions link1="head_2_link" link2="head_screen_link" reason="Adjacent"/>
     <disable_collisions link1="head_2_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="head_2_link" link2="suspension_front_right_link" reason="Never"/>
@@ -275,181 +195,33 @@
     <disable_collisions link1="head_2_link" link2="wheel_front_right_link" reason="Never"/>
     <disable_collisions link1="head_2_link" link2="wheel_rear_left_link" reason="Never"/>
     <disable_collisions link1="head_2_link" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_color_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_color_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_d435_camera_link" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_bottom_screw_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_color_optical_frame" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_d435_camera_link" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_depth_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_depth_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_d435_camera_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_color_optical_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_depth_optical_frame" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_d435_camera_link" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_d435_camera_infra1_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_d435_camera_infra1_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_d435_camera_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_depth_optical_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="head_d435_camera_infra1_optical_frame" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="head_d435_camera_link" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="head_d435_camera_infra2_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="head_d435_camera_infra2_optical_frame" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="head_d435_camera_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra1_optical_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="head_d435_camera_infra2_optical_frame" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="head_d435_camera_link" reason="Adjacent"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="head_d435_camera_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_infra2_optical_frame" link2="wheel_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="head_screen_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="suspension_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="suspension_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="suspension_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="suspension_rear_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="torso_fixed_column_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="torso_fixed_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="torso_lift_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="virtual_base_laser_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="wheel_front_right_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="wheel_rear_left_link" reason="Never"/>
-    <disable_collisions link1="head_d435_camera_link" link2="wheel_rear_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="head_front_camera_link" reason="Adjacent"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="head_screen_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="suspension_front_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="suspension_front_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="suspension_rear_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="suspension_rear_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="torso_fixed_column_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="torso_fixed_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="torso_lift_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="virtual_base_laser_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="wheel_front_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="wheel_front_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="wheel_rear_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_bottom_screw_frame" link2="wheel_rear_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="head_screen_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="suspension_front_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="suspension_front_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="suspension_rear_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="suspension_rear_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="torso_fixed_column_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="torso_fixed_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="torso_lift_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="virtual_base_laser_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="wheel_front_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="wheel_front_right_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="wheel_rear_left_link" reason="Never"/>
+    <disable_collisions link1="head_front_camera_link" link2="wheel_rear_right_link" reason="Never"/>
     <disable_collisions link1="head_screen_link" link2="suspension_front_left_link" reason="Never"/>
     <disable_collisions link1="head_screen_link" link2="suspension_front_right_link" reason="Never"/>
     <disable_collisions link1="head_screen_link" link2="suspension_rear_left_link" reason="Never"/>

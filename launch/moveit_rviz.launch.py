@@ -50,16 +50,12 @@ def start_rviz(context, *args, **kwargs):
     arm_type_left = read_launch_argument('arm_type_left', context)
     end_effector_right = read_launch_argument('end_effector_right', context)
     end_effector_left = read_launch_argument('end_effector_left', context)
-    ft_sensor_right = read_launch_argument('ft_sensor_right', context)
-    ft_sensor_left = read_launch_argument('ft_sensor_left', context)
 
     hw_suffix = get_tiago_pro_hw_suffix(
         arm_right=arm_type_right,
         arm_left=arm_type_left,
         end_effector_right=end_effector_right,
-        end_effector_left=end_effector_left,
-        ft_sensor_right=ft_sensor_right,
-        ft_sensor_left=ft_sensor_left)
+        end_effector_left=end_effector_left)
 
     robot_description_semantic = ('config/srdf/tiago_pro_pal-pro-gripper_pal-pro-gripper.srdf')
 

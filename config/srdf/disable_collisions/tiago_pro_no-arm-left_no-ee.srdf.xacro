@@ -3,4 +3,5 @@
   <xacro:include filename="$(find tiago_pro_moveit_config)/config/srdf/disable_collisions/tiago_pro_no-arm-left.srdf.xacro" />
   <xacro:include filename="$(find tiago_pro_moveit_config)/config/srdf/disable_collisions/right_no-ee.srdf.xacro" />
     <disable_collisions link1="arm_right_1_link" link2="arm_right_7_link" reason="Never"/>
+    <disable_collisions link1="arm_right_4_link" link2="wheel_front_right_link" reason="Never"/>
 </robot>
