@@ -2,6 +2,13 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Module added
+* Adapted to the new hw_suffix without ft_sensor
+* Removed non existing link head_d354 camera
+* Contributors: oscarmartinez
+
 1.0.3 (2024-06-26)
 ------------------
 * Merge branch 'dtk/move-robot-args' into 'humble-devel'
