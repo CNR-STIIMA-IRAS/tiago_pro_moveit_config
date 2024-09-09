@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2024-09-09)
+------------------
 * Module added
 * Adapted to the new hw_suffix without ft_sensor
 * Removed non existing link head_d354 camera
