@@ -65,8 +65,7 @@ for end_effector in "${end_effectors[@]}"; do
                         ft_sensor_right:="no-ft-sensor" \
                         end_effector_left:="$end_effector" \
                         end_effector_right:="no-end-effector" \
-                        wrist_model_left:="spherical-wrist" \ 
-                        wrist_model_right:="spherical-wrist"
+                        wrist_model_left:="spherical-wrist"
 
         generate_srdf "${prefix}_no-arm-left_${name}" \
                         "${prefix}_no-arm-left:right_${name}" \
@@ -75,7 +74,6 @@ for end_effector in "${end_effectors[@]}"; do
                         ft_sensor_right:="$ft_sensor" \
                         end_effector_left:="no-end-effector" \
                         end_effector_right:="$end_effector" \
-                        wrist_model_left:="spherical-wrist" \
                         wrist_model_right:="spherical-wrist"
     done
 done

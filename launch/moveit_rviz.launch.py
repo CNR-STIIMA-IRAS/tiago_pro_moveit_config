@@ -13,7 +13,7 @@
 # limitations under the License.
 
 import os
-
+from pathlib import Path
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, OpaqueFunction
@@ -25,6 +25,7 @@ from tiago_pro_description.launch_arguments import TiagoProArgs
 from launch_pal.arg_utils import LaunchArgumentsBase
 from tiago_pro_description.tiago_pro_launch_utils import get_tiago_pro_hw_suffix
 from dataclasses import dataclass
+from launch_pal.robot_arguments import CommonArgs
 
 
 @dataclass(frozen=True)
@@ -36,6 +37,9 @@ class LaunchArguments(LaunchArgumentsBase):
     ft_sensor_right: DeclareLaunchArgument = TiagoProArgs.ft_sensor_right
     ft_sensor_left: DeclareLaunchArgument = TiagoProArgs.ft_sensor_left
     base_type: DeclareLaunchArgument = TiagoProArgs.base_type
+
+    use_sim_time: DeclareLaunchArgument = CommonArgs.use_sim_time
+    use_sensor_manager_arg: DeclareLaunchArgument = CommonArgs.use_sensor_manager
 
 
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
@@ -57,19 +61,44 @@ def start_rviz(context, *args, **kwargs):
         end_effector_right=end_effector_right,
         end_effector_left=end_effector_left)
 
-    robot_description_semantic = ('config/srdf/tiago_pro_pal-pro-gripper_pal-pro-gripper.srdf')
+    srdf_file_path = Path(
+        os.path.join(
+            get_package_share_directory("tiago_pro_moveit_config"),
+            "config", "srdf",
+            "tiago_pro.srdf.xacro",
+        )
+    )
+
+    srdf_input_args = {
+        'arm_type_right': read_launch_argument('arm_type_right', context),
+        'arm_type_left': read_launch_argument('arm_type_left', context),
+        'end_effector_right': read_launch_argument('end_effector_right', context),
+        'end_effector_left': read_launch_argument('end_effector_left', context),
+        'ft_sensor_right': read_launch_argument('ft_sensor_right', context),
+        'ft_sensor_left': read_launch_argument('ft_sensor_left', context),
+        "base_type": read_launch_argument("base_type", context),
+    }
 
     # Trajectory Execution Functionality
     moveit_simple_controllers_path = (
         f'config/controllers/controllers{hw_suffix}.yaml')
 
+    planning_scene_monitor_parameters = {
+        'publish_planning_scene': True,
+        'publish_geometry_updates': True,
+        'publish_state_updates': True,
+        'publish_transforms_updates': True,
+    }
+
     # The robot description is read from the topic /robot_description if the parameter is empty
     moveit_config = (
         MoveItConfigsBuilder('tiago_pro')
-        .robot_description_semantic(file_path=robot_description_semantic)
+        .robot_description_semantic(file_path=srdf_file_path, mappings=srdf_input_args)
         .robot_description_kinematics(file_path=os.path.join('config', 'kinematics_kdl.yaml'))
         .trajectory_execution(moveit_simple_controllers_path)
-        .planning_pipelines(pipelines=['ompl'])
+        .joint_limits(file_path=os.path.join('config', 'joint_limits.yaml'))
+        .planning_pipelines(pipelines=['ompl', 'chomp'], default_planning_pipeline='ompl')
+        .planning_scene_monitor(planning_scene_monitor_parameters)
         .pilz_cartesian_limits(file_path=os.path.join('config', 'pilz_cartesian_limits.yaml'))
         .to_moveit_configs()
     )
@@ -85,7 +114,6 @@ def start_rviz(context, *args, **kwargs):
         arguments=['-d', rviz_full_config],
         emulate_tty=True,
         parameters=[
-            {},
             moveit_config.robot_description,
             moveit_config.robot_description_semantic,
             moveit_config.planning_pipelines,

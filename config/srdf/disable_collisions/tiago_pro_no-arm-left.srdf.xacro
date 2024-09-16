@@ -7,6 +7,7 @@
     <disable_collisions link1="arm_right_1_link" link2="arm_right_5_link" reason="Never"/>
     <disable_collisions link1="arm_right_1_link" link2="arm_right_6_link" reason="Never"/>
     <disable_collisions link1="arm_right_1_link" link2="arm_right_7_link" reason="Never"/>
+    <disable_collisions link1="arm_right_1_link" link2="arm_right_tool_link" reason="Never"/>
     <disable_collisions link1="arm_right_1_link" link2="base_antenna_left_link" reason="Never"/>
     <disable_collisions link1="arm_right_1_link" link2="base_antenna_right_link" reason="Never"/>
     <disable_collisions link1="arm_right_1_link" link2="base_dock_link" reason="Never"/>
@@ -112,7 +113,6 @@
     <disable_collisions link1="arm_right_4_link" link2="torso_head_link" reason="Never"/>
     <disable_collisions link1="arm_right_4_link" link2="virtual_base_laser_link" reason="Never"/>
     <disable_collisions link1="arm_right_4_link" link2="wheel_front_left_link" reason="Never"/>
-    <disable_collisions link1="arm_right_4_link" link2="wheel_front_right_link" reason="Never"/>
     <disable_collisions link1="arm_right_4_link" link2="wheel_rear_left_link" reason="Never"/>
     <disable_collisions link1="arm_right_4_link" link2="wheel_rear_right_link" reason="Never"/>
     <disable_collisions link1="arm_right_5_link" link2="arm_right_6_link" reason="Adjacent"/>

@@ -6,6 +6,6 @@
     <disable_collisions link1="arm_left_1_link" link2="arm_right_2_link" reason="Never"/>
     <disable_collisions link1="arm_left_2_link" link2="arm_right_1_link" reason="Never"/>
     <disable_collisions link1="arm_left_2_link" link2="arm_right_2_link" reason="Never"/>
-    <disable_collisions link1="arm_right_1_link" link2="arm_right_tool_link" reason="Never"/>
-    <disable_collisions link1="arm_right_6_link" link2="base_rear_laser_link" reason="Never"/>
+    <disable_collisions link1="arm_left_6_link" link2="torso_arm_left_link" reason="Never"/>
+    <disable_collisions link1="arm_right_4_link" link2="wheel_front_right_link" reason="Never"/>
 </robot>
