@@ -2,6 +2,15 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge branch 'omm/new_collisions' into 'humble-devel'
+  Omm/new collisions
+  See merge request robots/tiago_pro_moveit_config!20
+* New collisions
+* Collisions with straight wrist
+* Contributors: oscarmartinez, thomaspeyrucain
+
 1.1.0 (2024-09-09)
 ------------------
 * Module added
