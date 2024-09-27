@@ -9,7 +9,7 @@ end_effectors=()
 for end_effector_file in "$moveit_srdf"/end_effectors/*.srdf.xacro; do
      end_effectors+=($(basename "$end_effector_file" .srdf.xacro))
 done
-ft_sensors=(no-ft-sensor rokubi)
+ft_sensors=(no-ft-sensor rokubi ati)
 
 # crawl all end effectors and generate the corresponding subtree SRDF
 for end_effector in "${end_effectors[@]}"; do
@@ -20,7 +20,7 @@ for end_effector in "${end_effectors[@]}"; do
     fi
 
     for ft_sensor in "${ft_sensors[@]}"; do
-        args=("ft_sensor_left:=$ft_sensor" "ft_sensor_right:=$ft_sensor" end_effector_left:="$end_effector" end_effector_right:="$end_effector")
+        args=(wrist_model_left:="spherical-wrist" wrist_model_right:="spherical-wrist" "ft_sensor_left:=$ft_sensor" "ft_sensor_right:=$ft_sensor" end_effector_left:="$end_effector" end_effector_right:="$end_effector")
         for side in left right; do
             if [ "$ft_sensor" != "no-ft-sensor" ]; then
                 generate_disable_collisions_subtree "arm_${side}_tool_link" "${side}_${end_effector_value}_${ft_sensor}" "${side}_${end_effector_value}" "${args[@]}"
@@ -64,7 +64,8 @@ for end_effector in "${end_effectors[@]}"; do
                         ft_sensor_left:="$ft_sensor"\
                         ft_sensor_right:="no-ft-sensor" \
                         end_effector_left:="$end_effector" \
-                        end_effector_right:="no-end-effector"
+                        end_effector_right:="no-end-effector" \
+                        wrist_model_left:="spherical-wrist"
 
         generate_srdf "${prefix}_no-arm-left_${name}" \
                         "${prefix}_no-arm-left:right_${name}" \
@@ -72,7 +73,8 @@ for end_effector in "${end_effectors[@]}"; do
                         ft_sensor_left:="no-ft-sensor" \
                         ft_sensor_right:="$ft_sensor" \
                         end_effector_left:="no-end-effector" \
-                        end_effector_right:="$end_effector"
+                        end_effector_right:="$end_effector" \
+                        wrist_model_right:="spherical-wrist"
     done
 done
 
@@ -88,7 +90,9 @@ for end_effector_left in "${end_effectors[@]}"; do
                                 ft_sensor_left:="$ft_sensor_left" \
                                 ft_sensor_right:="$ft_sensor_right" \
                                 end_effector_left:="$end_effector_left" \
-                                end_effector_right:="$end_effector_right"
+                                end_effector_right:="$end_effector_right" \
+                                wrist_model_left:="spherical-wrist" \
+                                wrist_model_right:="spherical-wrist"
             done
         done
     done
