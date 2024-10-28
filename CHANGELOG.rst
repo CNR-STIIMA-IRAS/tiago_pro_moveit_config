@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add limits torso
+* Contributors: Aina
+
 1.1.1 (2024-09-27)
 ------------------
 * Merge branch 'omm/new_collisions' into 'humble-devel'
