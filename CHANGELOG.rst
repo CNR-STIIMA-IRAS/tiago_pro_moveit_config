@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Remove odom_to_base to make interative markers work
+* Contributors: Aina
+
 1.1.2 (2024-10-28)
 ------------------
 * Add limits torso
