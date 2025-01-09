@@ -30,7 +30,6 @@
 
     <!-- https://answers.ros.org/question/276062/adding-objects-in-moveit-fixed-in-the-world-while-the-mobile-manipulator-is-moving-confusion-with-root_joint-planning_frame-and-srdf-structure/ -->
     <xacro:property name="robot" value="tiago_pro"/>
-    <virtual_joint name="odom_to_base" child_link="base_footprint" parent_frame="odom" type="planar"/>
 
     <xacro:if value="${end_effector_left == 'no-end-effector'}">
         <xacro:property name="end_effector_left_arg" value="no-ee"/>
