@@ -112,8 +112,11 @@ def start_move_group(context, *args, **kwargs):
 
     moveit_config.to_moveit_configs()
 
-    move_group_configuration = {'use_sim_time': LaunchConfiguration('use_sim_time'),
-                                'publish_robot_description_semantic': True}
+    move_group_configuration = {
+        'use_sim_time': LaunchConfiguration('use_sim_time'),
+        'publish_robot_description_semantic': True,
+        'robot_description_timeout': 60.0,
+    }
 
     move_group_params = [
         moveit_config.to_dict(),
