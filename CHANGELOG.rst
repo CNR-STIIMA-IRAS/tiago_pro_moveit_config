@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Set robot_description_timeout to 60 seconds
+* Contributors: Noel Jimenez
+
 1.2.0 (2025-01-09)
 ------------------
 * Remove odom_to_base to make interative markers work
