@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add ground to planning scene
+* Contributors: sergiacosta
+
 1.2.1 (2025-02-05)
 ------------------
 * Set robot_description_timeout to 60 seconds
