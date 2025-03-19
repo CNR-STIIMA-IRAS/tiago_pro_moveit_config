@@ -47,6 +47,13 @@ class LaunchArguments(LaunchArgumentsBase):
 def declare_actions(launch_description: LaunchDescription, launch_args: LaunchArguments):
 
     launch_description.add_action(OpaqueFunction(function=start_move_group))
+
+    add_plane_node = Node(
+        package='tiago_pro_moveit_config',
+        executable='add_ground_node.py',
+        output='screen',
+    )
+    launch_description.add_action(add_plane_node)
     return
 
 

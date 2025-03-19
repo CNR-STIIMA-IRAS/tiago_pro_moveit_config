@@ -13,6 +13,11 @@ elseif(DEFINED ENV{PAL_DISTRO})
   message(FATAL_ERROR "The pal_module_cmake package was not found. Modules not registered.")
 endif()
 
+install(
+  PROGRAMS scripts/add_ground_node.py
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   ament_lint_auto_find_test_dependencies()
