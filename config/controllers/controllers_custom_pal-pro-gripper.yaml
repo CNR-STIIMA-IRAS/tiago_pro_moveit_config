@@ -6,6 +6,7 @@ moveit_simple_controller_manager:
     - arm_right_controller
     - torso_controller
     - head_controller
+    - gripper_left_controller
     - gripper_right_controller
   arm_left_controller:
     action_ns: follow_joint_trajectory
@@ -50,6 +51,7 @@ moveit_simple_controller_manager:
     default: true
     joints:
       - gripper_right_left_finger_joint
+
 trajectory_execution:
   allowed_execution_duration_scaling: 1.2
   allowed_goal_duration_margin: 0.5
