@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.0 (2025-03-19)
+------------------
 * Add ground to planning scene
 * Contributors: sergiacosta
 
