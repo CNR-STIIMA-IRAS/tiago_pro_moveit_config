@@ -62,7 +62,7 @@ class AddGroundPlaneNode(Node):
         # Define ground as a box
         ground_primitive = SolidPrimitive()
         ground_primitive.type = SolidPrimitive.BOX
-        ground_primitive.dimensions = [3.0, 3.0, 0.02]  # Size of the ground plane
+        ground_primitive.dimensions = [3.0, 3.0, 0.045]  # Size of the ground plane
 
         # Define the pose (slightly below base link to avoid floating point issues)
         ground_pose = PoseStamped()
