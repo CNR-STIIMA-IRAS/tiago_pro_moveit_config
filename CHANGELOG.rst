@@ -2,8 +2,8 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.3.1 (2025-03-26)
+------------------
 * added 1.25 cm padding to ground
 * cheks if the string 'use_sensor_manager' is equal to true
 * Contributors: matteovillani, sergiacosta
