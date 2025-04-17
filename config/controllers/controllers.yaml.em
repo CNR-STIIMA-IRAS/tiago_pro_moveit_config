@@ -9,10 +9,10 @@ moveit_simple_controller_manager:
 @[end if]@
     - torso_controller
     - head_controller
-@[if end_effector_left == "pal-pro-gripper"]@
+@[if end_effector_left == "pal-pro-gripper" or "allegro-hand"]@
     - gripper_left_controller
 @[end if]@
-@[if end_effector_right == "pal-pro-gripper"]@
+@[if end_effector_right == "pal-pro-gripper" or "allegro-hand"]@
     - gripper_right_controller
 @[end if]@
 @[if has_arm_left]@
@@ -71,6 +71,53 @@ moveit_simple_controller_manager:
     default: true
     joints:
       - gripper_right_left_finger_joint
+@[end if]@
+
+@[if end_effector_left == "allegro-hand"]@
+  gripper_left_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_left_finger_1_rotatory_joint
+      - gripper_left_finger_1_flexor_1_joint
+      - gripper_left_finger_1_flexor_2_joint
+      - gripper_left_finger_1_flexor_3_joint
+      - gripper_left_finger_2_rotatory_joint
+      - gripper_left_finger_2_flexor_1_joint
+      - gripper_left_finger_2_flexor_2_joint
+      - gripper_left_finger_2_flexor_3_joint
+      - gripper_left_finger_3_rotatory_joint
+      - gripper_left_finger_3_flexor_1_joint
+      - gripper_left_finger_3_flexor_2_joint
+      - gripper_left_finger_3_flexor_3_joint
+      - gripper_left_thumb_rotatory_joint
+      - gripper_left_thumb_flexor_1_joint
+      - gripper_left_thumb_flexor_2_joint
+      - gripper_left_thumb_flexor_3_joint
+@[end if]@
+@[if end_effector_right == "allegro-hand"]@
+  gripper_right_controller:
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    default: true
+    joints:
+      - gripper_right_finger_1_rotatory_joint
+      - gripper_right_finger_1_flexor_1_joint
+      - gripper_right_finger_1_flexor_2_joint
+      - gripper_right_finger_1_flexor_3_joint
+      - gripper_right_finger_2_rotatory_joint
+      - gripper_right_finger_2_flexor_1_joint
+      - gripper_right_finger_2_flexor_2_joint
+      - gripper_right_finger_2_flexor_3_joint
+      - gripper_right_finger_3_rotatory_joint
+      - gripper_right_finger_3_flexor_1_joint
+      - gripper_right_finger_3_flexor_2_joint
+      - gripper_right_finger_3_flexor_3_joint
+      - gripper_right_thumb_rotatory_joint
+      - gripper_right_thumb_flexor_1_joint
+      - gripper_right_thumb_flexor_2_joint
+      - gripper_right_thumb_flexor_3_joint
 @[end if]@
 trajectory_execution:
   allowed_execution_duration_scaling: 1.2
