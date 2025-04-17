@@ -2,6 +2,11 @@
 Changelog for package tiago_pro_moveit_config
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Add srdf collisions for allegro hand
+* Contributors: Aina
+
 1.3.1 (2025-03-26)
 ------------------
 * added 1.25 cm padding to ground
