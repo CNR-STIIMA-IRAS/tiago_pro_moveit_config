@@ -139,7 +139,7 @@ arm_right:
     - SPARStwokConfigDefault
     - TrajOptDefault
   projection_evaluator: joints(arm_right_1_joint,arm_right_2_joint)
-  longest_valid_segment_fraction: 0.01
+  longest_valid_segment_fraction: 0.001
 arm_right_torso:
   planner_configs:
     - SBLkConfigDefault
@@ -167,7 +167,8 @@ arm_right_torso:
     - SPARStwokConfigDefault
     - TrajOptDefault
   projection_evaluator: joints(torso_lift_joint,arm_right_1_joint)
-  longest_valid_segment_fraction: 0.01
+  longest_valid_segment_fraction: 0.001
+  range: 0.1
 torso:
   planner_configs:
     - SBLkConfigDefault
