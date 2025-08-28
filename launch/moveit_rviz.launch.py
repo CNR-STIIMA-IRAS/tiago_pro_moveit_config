@@ -118,7 +118,7 @@ def start_rviz(context, *args, **kwargs):
             moveit_config.robot_description_semantic,
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
-            {'use_sim_time': bool(read_launch_argument('use_sim_time', context))},
+            {'use_sim_time': eval(read_launch_argument('use_sim_time', context))},
         ],
     )
 
